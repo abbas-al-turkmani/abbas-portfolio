@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abbas al Turkmani — Portfolio
 
-## Getting Started
+Personal portfolio for Abbas al Turkmani, a Flutter-focused software developer based in Damascus, Syria. Built with Next.js 14 (App Router), TypeScript, Tailwind CSS, Framer Motion, and next-themes.
 
-First, run the development server:
+## Features
+
+- Sticky navbar with smooth-scroll section links, theme toggle, and mobile hamburger menu
+- Light / dark theme with `next-themes` (system preference, persisted in `localStorage`, no flash of the wrong theme)
+- Content driven by a typed data file at `data/portfolio.ts`
+- Responsive layout (mobile 375px, tablet 768px, desktop 1280px+)
+- Accessible markup, keyboard-friendly controls, and skip-to-content link
+- SEO metadata, Open Graph image, and generated favicon
+
+## Getting started
+
+Requirements: Node.js 18.17+ and npm.
 
 ```bash
+cd abbas-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Production build |
+| `npm run start` | Serve the production build |
+| `npm run lint` | Run ESLint |
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/           App Router pages, layout, metadata, OG image
+components/    Navbar, sections, theme toggle, icons
+data/          Typed portfolio content
+lib/           Small utilities
+public/        Static assets (OG placeholder)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Updating content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Edit `data/portfolio.ts` to change personal info, experience, projects, skills, education, certificates, and languages. Project GitHub links currently point at the GitHub profile as placeholders — replace each `githubUrl` with the real repository when available.
 
-## Deploy on Vercel
+## Contact form
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The contact form uses a `mailto:` fallback (no backend). Submitting opens the visitor’s email client with the name, email, and message filled in.
