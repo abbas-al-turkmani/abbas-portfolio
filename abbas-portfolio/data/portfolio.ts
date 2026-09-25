@@ -143,8 +143,7 @@ export const portfolio: Portfolio = {
   ],
   highlights: [
     { value: "2+", label: "Years of experience" },
-    { value: "Flutter", label: "Dart specialist" },
-    { value: "REST", label: "API integration" },
+    { value: "Address", label: "Syria, Damascus" },
     { value: "B.Sc.", label: "Computer Science" },
   ],
   experience: [

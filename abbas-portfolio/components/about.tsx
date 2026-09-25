@@ -29,7 +29,7 @@ export function About() {
             </p>
           </Reveal>
         </div>
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 margin">
           {portfolio.highlights.map((item, index) => (
             <Reveal key={item.label} delay={index * 0.06}>
               <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900">
