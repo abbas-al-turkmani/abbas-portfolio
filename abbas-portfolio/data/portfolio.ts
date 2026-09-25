@@ -99,10 +99,11 @@ export const portfolio: Portfolio = {
     phoneHref: "tel:+963949620906",
     linkedin: "https://www.linkedin.com/in/abbas-al-turkmani-b8b018376/",
     github: "https://github.com/abbas-al-turkmani",
-    tagline:
-      "Building polished Android and iOS apps with Flutter, Dart, and clean architecture.",
+    tagline: "Building Cross-platform apps using Flutter, and Dart.",
     summary:
-      "Junior Software Developer specializing in Flutter and Dart, with hands-on experience building Android and iOS applications, integrating REST APIs, implementing state management with Bloc, Provider, and GetX, and applying clean coding practices. Experienced in developing e-commerce, delivery, and service-based mobile applications. Currently completing a Bachelor's degree in Computer Science.",
+      "Junior Software Developer specializing in Flutter and Dart, with hands-on experience building Android and iOS applications, " +
+      "integrating REST APIs, implementing state management with Bloc, Provider, and GetX, and applying clean coding practices. " +
+      "Experienced in developing e-commerce, delivery, and service-based mobile applications. Currently completing a Bachelor's degree in Computer Science.",
   },
   navLinks: [
     { id: "home", label: "Home" },
@@ -141,7 +142,7 @@ export const portfolio: Portfolio = {
     },
   ],
   highlights: [
-    { value: "3+", label: "Mobile apps built" },
+    { value: "2+", label: "Years of experience" },
     { value: "Flutter", label: "Dart specialist" },
     { value: "REST", label: "API integration" },
     { value: "B.Sc.", label: "Computer Science" },

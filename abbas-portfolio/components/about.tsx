@@ -9,7 +9,7 @@ export function About() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="About"
-          title="A Flutter developer focused on real products"
+          title="An experienced Flutter developer"
         />
         <div className="mt-10 grid items-center gap-10 lg:grid-cols-[220px_1fr] lg:gap-14">
           <Reveal className="mx-auto lg:mx-0">

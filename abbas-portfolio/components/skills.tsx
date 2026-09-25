@@ -16,7 +16,7 @@ export function Skills() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Skills"
-          title="Tools I use to turn ideas into useful apps"
+          title="Skills I gained during my journy"
         />
         <div className="mt-12 grid gap-5 md:grid-cols-2">
           {portfolio.skills.map((group, index) => (

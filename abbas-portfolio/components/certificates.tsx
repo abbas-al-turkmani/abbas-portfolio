@@ -6,7 +6,7 @@ export function Certificates() {
   return (
     <section id="certificates" className="scroll-mt-24 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Certificates" title="Formal training and credentials" />
+        <SectionHeading eyebrow="Certificates" title="Formal training" />
         <div className="mt-10 grid gap-4 sm:grid-cols-2">
           {portfolio.certificates.map((item, index) => (
             <Reveal key={`${item.title}-${item.issuer}`} delay={index * 0.05}>

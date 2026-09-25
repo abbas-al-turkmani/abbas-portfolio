@@ -35,14 +35,14 @@ export function Hero() {
                 <MessageCircle size={16} /> Get In Touch
               </a>
             </div>
-            <div className="hero-stats" aria-label="Career highlights">
+            {/* <div className="hero-stats" aria-label="Career highlights">
               {[["3+", "Years Exp."]].map(([value, label]) => (
                 <div key={label} className="hero-stat">
                   <strong>{value}</strong>
                   <span>{label}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </Reveal>
           <ul
             className="mt-8 flex items-center gap-3"
