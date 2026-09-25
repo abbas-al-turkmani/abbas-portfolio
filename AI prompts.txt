@@ -1,0 +1,233 @@
+# Assintial pormpt:
+	Your a professional software engineer with 5 years of experiance.
+	I need you to write a prompt for cursor.ai to create a next.js portfolio website.
+	I am a flutter developer, my name is Abbas al Turkmani, and the pdf file includes my full data.
+	consider use theme management and responsive screen designe.
+
+# First prompt:
+
+Build a modern, professional portfolio website using Next.js 14 (App Router), TypeScript, and Tailwind CSS for a Flutter mobile developer.
+In new folder
+
+## Personal Info
+- Name: Abbas al Turkmani
+- Title: Software Developer | Flutter
+- Location: Damascus, Syria
+- Email: abbas.az408@gmail.com
+- Phone: +963 949620906
+- LinkedIn: https://www.linkedin.com/in/abbas-al-turkmani-b8b018376/
+- GitHub: https://github.com/abbas-al-turkmani
+
+## Summary
+Junior Software Developer specializing in Flutter and Dart, with hands-on experience building Android and iOS applications, integrating REST APIs, implementing state management with Bloc, Provider, and GetX, and applying clean coding practices. Experienced in developing e-commerce, delivery, and service-based mobile applications. Currently completing a Bachelor's degree in Computer Science.
+
+## Tech Stack & Requirements
+- Next.js 14+ (App Router, Server Components where sensible)
+- TypeScript (strict mode)
+- Tailwind CSS for styling
+- Framer Motion for subtle scroll/entrance animations
+- next-themes for dark/light theme management (toggle in navbar, respects system preference, no flash-of-wrong-theme on load)
+- Fully responsive: mobile-first, tested breakpoints for mobile (375px), tablet (768px), and desktop (1280px+)
+- Semantic HTML + accessible (proper aria labels, keyboard navigation, good color contrast in both themes)
+- Optimized fonts via next/font
+- SEO: metadata, Open Graph tags, favicon
+- Clean folder structure: /app, /components, /data, /lib, /public
+- Store portfolio content (experience, projects, skills, etc.) in a typed data file (e.g. /data/portfolio.ts) rather than hardcoding in JSX, so it's easy to update later
+
+## Sections to Build
+
+### 1. Navbar
+Sticky navbar with name/logo, links to each section (smooth scroll), theme toggle button, mobile hamburger menu.
+
+### 2. Hero Section
+- Name, title "Software Developer | Flutter"
+- Short tagline based on the summary above
+- CTA buttons: "View Projects" and "Contact Me"
+- Social icons linking to GitHub, LinkedIn, email, phone
+
+### 3. About / Summary
+Short paragraph version of the summary above, plus a highlight row of key stats (e.g. "3+ mobile apps built", "Flutter & Dart specialist", "REST API integration").
+
+### 4. Experience (timeline layout)
+- **Administrative Assistant and IT Support** — Tadmor Prison Survivors Association — 08/2026–09/2026
+  Designed a data archiving system with MS Access + C# interfaces; standardized Excel spreadsheets from multiple regional sources; provided IT/network support.
+- **Training — Ear-tech** — 07/2025–08/2025
+  Completed intensive boot camps in cybersecurity, AI, and software development (neural networks, Azure, DevOps, PHP Laravel, Figma UX/UI, Kali Linux pentesting basics).
+- **Mobile Development using Flutter — Tamkeen** — 09/2024–04/2025
+  6 months of practical Flutter/Dart training; built e-commerce, delivery, and ordering apps; received a recommendation letter.
+
+### 5. Projects (card grid, 3 columns on desktop, 1 on mobile)
+- **Coffee Shop App** — Mobile ordering app: choose coffee type, customize drink, choose pickup or delivery, live delivery tracking on map, favorites list.
+- **My Order (Delivery Services App)** — Multi-service app: order products/groceries or request a taxi driver; shopping cart; separate delivery-person flow to accept/reject requests; light/dark theme; English/Arabic language switch with support for adding new languages.
+- **Platzy Store (Ecommerce App)** — Multi-category store app: product details, wishlist, cart, checkout flow; theme switching; multi-language support (English/Arabic).
+Each project card: title, 1–2 line description, tech tags (Flutter, Dart, Bloc/Provider/GetX, REST API), and a "View on GitHub" link placeholder.
+
+### 6. Skills (grouped, with proficiency indicators — e.g. progress bars or tags)
+- **Advanced:** Dart, Flutter SDK & Widgets, State Management (Provider, Bloc, GetX), REST API/JSON Integration, SharedPreferences, Problem-Solving, HTML/CSS/JS
+- **Intermediate:** Firebase, SQLite, Git/GitHub/CI-CD, Clean Architecture (MVC, MVVM, TDD), Bloc/Cubit/http libraries, C++, C#
+- **Basic:** UI/UX Enhancement
+
+### 7. Education
+- **Computer Science, Bachelor Degree** — Applied Sciences Damascus University — 10/2019–08/2026
+- **Secondary Education in Computer Techniques** — High School, Ministry of Education, Damascus — 09/2015–07/2019 (89%)
+
+### 8. Certificates (grid or list)
+- Mobile Development Using Flutter — New Horizons Institute
+- Mobile Development Using Flutter — Tamkeen Training Company
+- Network+ — New Horizons Institute
+- Computer Maintenance — Al Khwarizmi Institute
+
+### 9. Languages
+Arabic (Native), English (Fluent)
+
+### 10. Contact Section / Footer
+Contact form (name, email, message — can be a mailto: fallback if no backend), plus direct email/phone/social links. Footer with copyright and quick nav links.
+
+## Design Direction
+- Clean, modern, tech-forward aesthetic suited to a mobile developer (subtle nods to app-UI design: rounded cards, soft shadows, mobile-frame motif optional in hero)
+- Accent color: a single vibrant accent (e.g. teal or indigo) matching a "developer portfolio" feel, consistent across light and dark themes
+- Generous whitespace, clear typography hierarchy
+- Smooth section-entrance animations on scroll (Framer Motion, fade/slide, not excessive)
+
+## Deliverables
+- Fully working Next.js project structure
+- All content wired from /data/portfolio.ts (typed)
+- Working theme toggle persisted via localStorage
+- Responsive on all breakpoints, tested layout for navbar collapse on mobile
+- Placeholder favicon and OG image
+- README with setup/run instructions
+
+###########
+
+# some fixes prompt:
+	Thank you! that was greate.
+	I need you to fix some thinks:
+		First; In experience sections change "Where I have been building" to "Where I have been working".
+
+		Second; re-combine the skills as the following catigories:
+			- Flutter skills
+			- Architecture & State Management
+			- Data bases
+			- Other Programming.
+			and don't forget to add icons descriping each gatigory.
+
+# Second prompt:
+
+Rebuild the website to satisfiy the following:
+
+## Personal Info
+- Name: Abbas al Turkmani
+- Title: Software Developer | Flutter
+- Location: Damascus, Syria
+- Email: abbas.az408@gmail.com
+- Phone: +963 949620906
+- LinkedIn: https://www.linkedin.com/in/abbas-al-turkmani-b8b018376/
+- GitHub: github.com/abbas-al-turkmani
+
+## Summary
+Junior Software Developer specializing in Flutter and Dart, with hands-on experience building Android and iOS applications, integrating REST APIs, implementing state management with Bloc, Provider, and GetX, and applying clean coding practices. Experienced in developing e-commerce, delivery, and service-based mobile applications. Currently completing a Bachelor's degree in Computer Science.
+
+## Tech Stack & Requirements
+- Next.js 14+ (App Router, Server Components where sensible)
+- TypeScript (strict mode)
+- Tailwind CSS for styling
+- Framer Motion for subtle scroll/entrance animations
+- next-themes for dark/light theme management (toggle in navbar, respects system preference, no flash-of-wrong-theme on load)
+- Fully responsive: mobile-first, tested breakpoints for mobile (375px), tablet (768px), and desktop (1280px+)
+- Semantic HTML + accessible (proper aria labels, keyboard navigation, good color contrast in both themes)
+- Optimized fonts via next/font
+- SEO: metadata, Open Graph tags, favicon
+- Clean folder structure: /app, /components, /data, /lib, /public
+- Store portfolio content (experience, projects, skills, etc.) in a typed data file (e.g. /data/portfolio.ts) rather than hardcoding in JSX, so it's easy to update later
+
+## Sections to Build
+
+### 1. Navbar
+Sticky navbar with name/logo, links to each section (smooth scroll), theme toggle button, mobile hamburger menu.
+
+### 2. Hero Section
+- Name, title "Software Developer | Flutter"
+- Short tagline based on the summary above
+- CTA buttons: "View Projects" and "Contact Me"
+- Social icons linking to GitHub, LinkedIn, email, phone
+
+### 3. About / Summary
+Short paragraph version of the summary above, plus a highlight row of key stats (e.g. "3+ mobile apps built", "Flutter & Dart specialist", "REST API integration").
+
+### 4. Experience (timeline layout, section heading: "Where I Have Been Working")
+- **Administrative Assistant and IT Support** — Tadmor Prison Survivors Association — 08/2026–09/2026
+  Designed a data archiving system with MS Access + C# interfaces; standardized Excel spreadsheets from multiple regional sources; provided IT/network support.
+- **Training — Ear-tech** — 07/2025–08/2025
+  Completed intensive boot camps in cybersecurity, AI, and software development (neural networks, Azure, DevOps, PHP Laravel, Figma UX/UI, Kali Linux pentesting basics).
+- **Mobile Development using Flutter — Tamkeen** — 09/2024–04/2025
+  6 months of practical Flutter/Dart training; built e-commerce, delivery, and ordering apps; received a recommendation letter.
+
+### 5. Projects (card grid, 3 columns on desktop, 1 on mobile)
+- **Coffee Shop App** — Mobile ordering app: choose coffee type, customize drink, choose pickup or delivery, live delivery tracking on map, favorites list.
+- **My Order (Delivery Services App)** — Multi-service app: order products/groceries or request a taxi driver; shopping cart; separate delivery-person flow to accept/reject requests; light/dark theme; English/Arabic language switch with support for adding new languages.
+- **Platzy Store (Ecommerce App)** — Multi-category store app: product details, wishlist, cart, checkout flow; theme switching; multi-language support (English/Arabic).
+Each project card: title, 1–2 line description, tech tags (Flutter, Dart, Bloc/Provider/GetX, REST API), and a "View on GitHub" link placeholder.
+
+### 6. Skills (grouped into 4 categories, each with a header icon from lucide-react, and proficiency shown via progress bars or level tags)
+
+- **Flutter Skills** (icon: `Smartphone`)
+  Dart (Advanced), Flutter SDK & Widgets — Stateful/Stateless (Advanced), SharedPreferences / Local Storage (Advanced), Performance Optimization (Advanced), UI/UX Enhancement (Basic)
+
+- **Architecture & State Management** (icon: `Network` or `GitBranch`)
+  State Management: Provider, Bloc, GetX (Advanced), Clean Architecture — MVC, MVVM, TDD (Intermediate), Problem-Solving Skills (Advanced), REST API / JSON Integration (Advanced), Third-party Libraries: Bloc, Cubit, http (Intermediate)
+
+- **Databases** (icon: `Database`)
+  Firebase (Intermediate), SQLite (Intermediate)
+
+- **Other Programming** (icon: `Code2`)
+  HTML, CSS, JS (Advanced), C++ (Intermediate), C# (Intermediate), Git, GitHub, CI/CD (Intermediate)
+
+Render each category as a card with the icon + title in the header, followed by a list of skill chips or progress bars underneath. Use a consistent icon set (lucide-react) sized and colored to match the accent color in both light/dark themes.
+
+### 7. Education
+- **Computer Science, Bachelor Degree** — Applied Sciences Damascus University — 10/2019–08/2026
+- **Secondary Education in Computer Techniques** — High School, Ministry of Education, Damascus — 09/2015–07/2019 (89%)
+
+### 8. Certificates (grid or list)
+- Mobile Development Using Flutter — New Horizons Institute
+- Mobile Development Using Flutter — Tamkeen Training Company
+- Network+ — New Horizons Institute
+- Computer Maintenance — Al Khwarizmi Institute
+
+### 9. Languages
+Arabic (Native), English (Fluent)
+
+### 10. Contact Section / Footer
+Contact form (name, email, message — can be a mailto: fallback if no backend), plus direct email/phone/social links. Footer with copyright and quick nav links.
+
+## Design Direction
+- Clean, modern, tech-forward aesthetic suited to a mobile developer (subtle nods to app-UI design: rounded cards, soft shadows, mobile-frame motif optional in hero)
+- Accent color: a single vibrant accent (e.g. teal or indigo) matching a "developer portfolio" feel, consistent across light and dark themes
+- Generous whitespace, clear typography hierarchy
+- Smooth section-entrance animations on scroll (Framer Motion, fade/slide, not excessive)
+- Use lucide-react for all icons (skills categories, contact info, social links) for visual consistency
+
+## Deliverables
+- Fully working Next.js project structure
+- All content wired from /data/portfolio.ts (typed)
+- Working theme toggle persisted via localStorage
+- Responsive on all breakpoints, tested layout for navbar collapse on mobile
+- Placeholder favicon and OG image
+- README with setup/run instructions
+
+############################################
+
+#Thired prompt:
+	Add the follwing links to projects whene clicking on "view on githup".
+	coffee shop app: https://github.com/abbas-al-turkmani/coffee_shop
+	Delivery Services App: https://github.com/abbas-al-turkmani/my_order_app
+	Ecommerce app: https://github.com/abbas-al-turkmani/platzy_fackstore
+
+	and this image to the ABOUT section.
+
+#Final prompt:
+	Add these icons to the tab and the navbar.
+	كوفي.png for dark theme
+	and كوفي1.png for white theme
+
+	and finally build this website as release so I will be able to upload it to the internet. 
